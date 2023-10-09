@@ -267,13 +267,13 @@ section{
     background-size: cover;
 }
 .slider .slider-parent .images-list:first-of-type, .slider .slider-parent .images-list:last-of-type {
-    background-image: url(../FE-Palembang-22/Images/bg1.png);
+    background-image: url("../FE-Palembang-22/Images/bg1.png");
 }
 .slider .slider-parent .images-list:nth-of-type(2) {
-    background-image: url(../FE-Palembang-22/Images/bg2.png)
+    background-image: url("../FE-Palembang-22/Images/bg2.png")
 }
 .slider .slider-parent .images-list:nth-of-type(3) {
-    background-image: url(../FE-Palembang-22/Images/bg3.png)
+    background-image: url("../FE-Palembang-22/Images/bg3.png")
 }
 .slider .buttom-circles {
     position: absolute;
