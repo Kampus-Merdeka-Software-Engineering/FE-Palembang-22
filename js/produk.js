@@ -1,3 +1,31 @@
+// Mendapatkan referensi ke elemen tabel
+const tableBody = document.querySelector('#data-table tbody');
+
+// Mendefinisikan URL API
+const apiUrl = 'https://magnificent-cod-slip.cyclic.app/outlates';
+
+// Mengambil data dari API
+fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        // Loop melalui data dan tambahkan baris ke dalam tabel
+        data.forEach(item => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${item.kota}</td>
+                <td>${item.alamat}</td>
+                <td>${item.telp}</td>
+            `;
+            tableBody.appendChild(row);
+        });
+    })
+    .catch(error => {
+        console.error('Terjadi kesalahan:', error);
+    });
+
+
+
+
 // DOM
 function ubahWarnamn1() {
   mn1.style.backgroundColor = '#60b4df';
