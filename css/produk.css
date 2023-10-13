@@ -513,6 +513,15 @@ main{
 }
 
 
+.main-container th{
+    background-color: #60b4df;
+}
+
+.main-container td{
+    padding: 10px 0px;
+}
+
+
 #data-estimasi{
     color: #ffffff;
 }
