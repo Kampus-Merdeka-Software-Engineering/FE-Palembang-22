@@ -8,7 +8,8 @@ function getHarga(){
   let width = document.getElementById("lebar").value;
   es_img.style.display='none';
   data_estimasi.style.color='#333333';
-  data_estimasi.style.marginTop='30px'
+  data_estimasi.style.marginTop='30px';
+  
   
   let tableBody = document.querySelector('#data-estimasi tbody');
 
