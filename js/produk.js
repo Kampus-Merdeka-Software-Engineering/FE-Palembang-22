@@ -6,7 +6,9 @@ function getHarga(){
   let length = document.getElementById("panjang").value;
   let heigth = document.getElementById("tinggi").value;
   let width = document.getElementById("lebar").value;
-  
+  es_img.style.display='none';
+  data_estimasi.style.color='#333333';
+  data_estimasi.style.marginTop='30px'
   
   let tableBody = document.querySelector('#data-estimasi tbody');
 
@@ -33,6 +35,8 @@ fetch(apiUrl)
     }else{
       harga = biaya_normal
     }
+    
+
             const row = document.createElement('tr');
 
             row.innerHTML = `
@@ -47,7 +51,7 @@ fetch(apiUrl)
     });
     
   }
-
+    
 
 // Get Outlate
 
@@ -120,6 +124,8 @@ const mn3 = document.getElementById('mn3');
 const m1 = document.getElementById('main1');
 const m2 = document.getElementById('main2');
 const m3 = document.getElementById('main3');
+const es_img = document.getElementById('es_img');
+const data_estimasi = document.getElementById('data-estimasi');
 
 
 mn1.addEventListener('click', ubahWarnamn1);
@@ -152,12 +158,12 @@ window.addEventListener('scroll', reveal);
     }
 
 // SCROLL ATAS
-const toTop = document.querySelector(".to-top");
+// const toTop = document.querySelector(".to-top");
 
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 100) {
-    toTop.classList.add("active");
-  } else {
-    toTop.classList.remove("active");
-  }
-})
+// window.addEventListener("scroll", () => {
+//   if (window.pageYOffset > 100) {
+//     toTop.classList.add("active");
+//   } else {
+//     toTop.classList.remove("active");
+//   }
+// })

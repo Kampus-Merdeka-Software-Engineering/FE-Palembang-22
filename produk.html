@@ -69,38 +69,38 @@
                 <div id="main2">
                     <div class="input-box">
                         <div class="ib1">
-                            <label for="">from</label>
-                            <input type="text" placeholder="lokasi">
+                            <label for="asal">from</label>
+                            <input type="text" id="asal" placeholder="lokasi">
 
                         </div>
                         <div class="ib2">
-                            <label for="">to</label>
-                            <input type="text" placeholder="lokasi">
+                            <label for="tujuan">to</label>
+                            <input type="text" id="tujuan" placeholder="lokasi">
 
                         </div>
                         <div class="ib3">
-                            <label for="">weight</label>
-                            <input type="number" placeholder="kg">
+                            <label for="berat">weight</label>
+                            <input type="number" id="berat" placeholder="kg">
 
                         </div>
                         <div class="ib4">
-                            <label for="">length</label>
-                            <input type="number" placeholder="cm">
+                            <label for="panjang">length</label>
+                            <input type="number" id="panjang" placeholder="cm">
 
                         </div>
                         <div class="ib5">
-                            <label for="">height</label>
-                            <input type="number" placeholder="cm">
+                            <label for="tinggi">height</label>
+                            <input type="number" id="tinggi" placeholder="cm">
 
                         </div>
                         <div class="ib6">
-                            <label for="">width</label>
-                            <input type="number" placeholder="cm">
+                            <label for="lebar">width</label>
+                            <input type="number" id="lebar" placeholder="cm">
 
                         </div>
-                        <input class="btn-cek" type="button" value="Cek">
+                        <input onclick="getHarga()" class="btn-cek" type="button" value="Cek">
                     </div>
-                    <div class="hasil">
+                    <div id="es_img" class="hasil">
                         <img src="../FE-Palembang-22/Images/cost.png" width="200px">
                     </div>
                     <table id="data-estimasi" >
